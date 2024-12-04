@@ -1,7 +1,7 @@
 #include "binary_trees.h"
 /**
- * binary_tree_insert_left - This function adds a node in the left of the parent
- * if it exists it move down one level and add the new node first
+ * binary_tree_insert_left - This function adds a node in the left-child
+ * if it exists it add the new node first
  * @parent: The parent of the specified node
  * @value: The value of the node
  * Return: NULL if fails or the new node
