@@ -28,7 +28,7 @@ int tree_is_perfect(const binary_tree_t *tree)
 	}
 }
 /**
- * binary_tree_is_perfect - This function checks whether it is perfect or not a tree
+ * binary_tree_is_perfect - This function checks if it is perfect or not a tree
  * @tree: The tree to be checked
  * Return: 1 Success or 0 if Fail
  */
