@@ -26,8 +26,8 @@ int check_sub_tree_Left(const binary_tree_t *node, int max)
 	}
 }
 /**
- * check_sub_tree_Right - This function checks if all the nodes are bigger than the
- * root
+ * check_sub_tree_Right - This function checks if all the nodes
+ * are bigger than the root
  * @node: The node in the tree to be verify
  * @min: The value to be compared
  * Return: 1 if equal or bigger and 0 greater
