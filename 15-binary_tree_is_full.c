@@ -15,17 +15,17 @@ int binary_tree_is_full(const binary_tree_t *tree)
 	}
 	else
 	{
-		if (tree->lefet && tree->rite)
+		if (tree->left && tree->right)
 		{
-			lefet = binary_tree_is_full(tree->lefet);
-			rite = binary_tree_is_full(tree->rite);
+			lefet = binary_tree_is_full(tree->left);
+			rite = binary_tree_is_full(tree->right);
 			if (lefet == 0 || rite == 0)
 			{
 				return (0);
 			}
 			return (1);
 		}
-		else if (!tree->lefet && !tree->rite)
+		else if (!tree->left && !tree->right)
 		{
 			return (1);
 		}
