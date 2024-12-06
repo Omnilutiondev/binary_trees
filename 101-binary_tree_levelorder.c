@@ -24,7 +24,7 @@ size_t binary_tree_height(const binary_tree_t *tree)
 	}
 }
 /**
- * binary_tree_depth - This function checks the depth of specified node from root
+ * binary_tree_depth - This function checks the depth of a specified node
  * @tree: the node to be checked
  * Return: 0 if it is the root or the depth
  */
@@ -86,7 +86,7 @@ void recursion(link_t **head, const binary_tree_t *tree)
 	}
 }
 /**
- * binary_tree_levelorder - This function prints the nodes element in a lever-order
+ * binary_tree_levelorder - This function prints the nodes in a lever-order
  * @tree: The root node
  * @func: The function to be used
  * Return: Nothing
