@@ -1,4 +1,5 @@
 #include "binary_trees.h"
+
 /**
  * new_node - This function creates a new node in a linked_list
  * @node: The type pointer of node to be created
@@ -43,7 +44,7 @@ void _push(binary_tree_t *node, link_t *head, link_t **tail)
 {
 	link_t *noob;
 
-	noob = noob_node(node);
+	noob = new_node(node);
 	if (noob == NULL)
 	{
 		free_q(head);
