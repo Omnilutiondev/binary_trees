@@ -70,44 +70,43 @@ void _pop(link_t **head)
  * Return: 1 on Success or 0 if Fail
  */
 int binary_tree_is_complete(const binary_tree_t *tree)
-{
-	link_t *hd, *tl;
-	int fg = 0;
+{	link_t *head, *tail;
+	int flag = 0;
 
 	if (tree == NULL)
 	{
 		return (0);
 	}
-	hd = tl = noob_node((binary_tree_t *)tree);
-	if (hd == NULL)
+	head = tail = new_node((binary_tree_t *)tree);
+	if (head == NULL)
 	{
 		exit(1);
 	}
-	while (hd != NULL)
+	while (head != NULL)
 	{
 		if (head->node->left != NULL)
 		{
-			if (fg == 1)
+			if (flag == 1)
 			{
-				free_q(hd);
+				free_q(head);
 				return (0);
 			}
-			_push(head->node->left, hd, &tl);
+			_push(head->node->left, head, &tail);
 		}
 		else
-			fg = 1;
+			flag = 1;
 		if (head->node->right != NULL)
 		{
-			if (fg == 1)
+			if (flag == 1)
 			{
-				free_q(hd);
+				free_q(head);
 				return (0);
 			}
-			_push(head->node->right, hd, &tl);
+			_push(head->node->right, head, &tail);
 		}
 		else
-			fg = 1;
-		_pop(&hd);
+			flag = 1;
+		_pop(&head);
 	}
 	return (1);
 }
