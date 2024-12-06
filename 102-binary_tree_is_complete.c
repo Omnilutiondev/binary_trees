@@ -1,10 +1,10 @@
 #include "binary_trees.h"
 /**
- * noob_node - This function creates a new node in a linked_list
+ * new_node - This function creates a new node in a linked_list
  * @node: The type pointer of node to be created
  * Return: the new node
  */
-link_t *noob_node(binary_tree_t *node)
+link_t *new_node(binary_tree_t *node)
 {
 	link_t *noob;
 
